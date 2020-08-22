@@ -10,9 +10,9 @@ def json_sanitize():
     
     for ch in pay_input:
         if ch in bad_chars:    
-            return jsonify({"result ":"unsanitized"})
+            return jsonify({"result":"unsanitized"})
     
-    return jsonify({"result ":"sanitized"})
+    return jsonify({"result":"sanitized"})
 
 if __name__ == "__main__":
     app.run(debug=True)
